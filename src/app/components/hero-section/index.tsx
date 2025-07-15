@@ -60,21 +60,26 @@ const HeroSection: React.FC = () => {
             </div>
             {/* Right floating cards */}
             <div className="absolute right-28 top-0 space-y-6 hidden lg:block">
-              <StatCard
-                icon={
-                  <Image
-                    src="/calories.png"
-                    alt="Kcal Icon"
-                    width={31.19}
-                    height={31.19}
-                    className="object-contain"
-                  />
-                }
-                value="2250"
-                label="Kcal"
-                description="250 Calories are Left"
-                className=" bg-white/10 w-[170px]"
-              />
+              <div className="p-2.5 bg-white/10 rounded backdrop-blur-blur inline-flex flex-col justify-center items-center gap-[5.20px]">
+                <Image
+                  src="/calories.png"
+                  alt="Calories Graph"
+                  width={50}
+                  height={50}
+                  className="object-cover object-center"
+                />
+                <div className="inline-flex justify-center items-center gap-[5.20px]">
+                  <div className="text-center justify-start text-white text-2xl font-bold ">
+                    2250
+                  </div>
+                  <div className="text-center justify-start text-white/80 text-base font-normal ">
+                    Kcal
+                  </div>
+                </div>
+                <div className="text-center justify-start text-white text-xs font-medium ">
+                  250 Calories are Left
+                </div>
+              </div>
             </div>
             <div className="absolute right-40 top-44 space-y-6 hidden lg:block">
               <Image

@@ -6,7 +6,7 @@ import StatCard from "../stat-card";
 
 const Essentials: React.FC = () => {
   return (
-    <div className="flex justify-center items-center bg-white/10 rounded-2xl px-12 gap-x-8 w-[400px] h-[98px]">
+    <div className="flex justify-center  items-center bg-white/10 rounded-2xl px-12 gap-x-8 w-[400px] h-[98px]">
       <StatCard
         icon={
           <Image
