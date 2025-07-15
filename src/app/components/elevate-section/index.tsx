@@ -1,5 +1,6 @@
 // app/components/ElevateSection.tsx
 "use client";
+import AnimatedHoverButton from "../button";
 
 import React from "react";
 import Image from "next/image";
@@ -44,9 +45,7 @@ export default function ElevateSection() {
         </div>
 
         {/* CTA Button */}
-        <button className="mt-6 px-5 py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-all">
-          Download App
-        </button>
+        <AnimatedHoverButton text="Download App" className="mt-6" />
       </div>
     </section>
   );

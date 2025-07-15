@@ -1,6 +1,7 @@
 // components/Navbar.tsx
 import React from "react";
 import Image from "next/image";
+import AnimatedHoverButton from "../button";
 
 const Navbar: React.FC = () => {
   return (
@@ -54,9 +55,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Download Button */}
-      <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-        Download App
-      </button>
+      <AnimatedHoverButton text="Download App" />
     </nav>
   );
 };

@@ -38,7 +38,7 @@ const WorkoutLibrarySection = () => {
   ];
 
   return (
-    <div className=" relative w-full mt-32">
+    <div className="h-[786px] relative w-full mt-32">
       <div className="relative bg-white/5 w-full rounded-[40px]  h-[786px] z-10 flex items-start justify-center mx-auto px-6 sm:px-8 lg:px-28 py-12">
         {/* Left Content */}
         <div className="flex-1 max-w-2xl mb-12 space-y-8">
@@ -80,7 +80,7 @@ const WorkoutLibrarySection = () => {
                 </div>
 
                 {/* Right Info */}
-                <div className="flex flex-col justify-between space-y-4 flex-1">
+                <div className="flex flex-col justify-between flex-1">
                   <div className="flex items-center gap-2">
                     <h3 className="text-white font-semibold text-lg">
                       {workout.title}
