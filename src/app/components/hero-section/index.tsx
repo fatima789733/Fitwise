@@ -3,9 +3,9 @@ import Image from "next/image";
 import Navbar from "../navbar";
 import StatCard from "../stat-card";
 import PhoneMockup from "../phone-mockup";
-import Badge from "../hero-section-badge";
-import Diet from "../hero-section-diet";
-import Essentials from "../hero-section-essentials";
+import Badge from "./hero-section-badge";
+import Diet from "./hero-section-diet";
+import Essentials from "./hero-section-essentials";
 
 const HeroSection: React.FC = () => {
   return (

@@ -2,24 +2,24 @@
 
 import React from "react";
 import Image from "next/image";
-import StatCard from "../stat-card";
+import StatCard from "../../stat-card";
 
-const Diet: React.FC = () => {
+const Essentials: React.FC = () => {
   return (
-    <div className="flex justify-center items-center bg-white/10 rounded-2xl px-6 gap-x-4 w-[260px] h-[98px]">
+    <div className="flex justify-center  items-center bg-white/10 rounded-2xl px-12 gap-x-8 w-[400px] h-[98px]">
       <StatCard
         icon={
           <Image
-            src="/carbs.png"
-            alt="Carbs"
+            src="/weight.png"
+            alt="weight"
             width={28}
             height={28}
             className="object-contain"
           />
         }
-        value="125g"
-        label="Carbs"
-        valueColor="text-[#FF3C3C]"
+        value="78g"
+        label="Weight"
+        valueColor="text-white"
         labelColor="text-white/60"
         layout="vertical"
         className="bg-transparent w-24"
@@ -28,15 +28,15 @@ const Diet: React.FC = () => {
         icon={
           <Image
             src="/protien.png"
-            alt="Protein"
+            alt="muscle"
             width={28}
             height={28}
             className="object-contain"
           />
         }
-        value="15g"
-        label="Protein"
-        valueColor="text-[#4395FF]"
+        value="30g"
+        label="Muscle"
+        valueColor="text-white"
         labelColor="text-white/60"
         layout="vertical"
         className="bg-transparent w-24"
@@ -44,16 +44,33 @@ const Diet: React.FC = () => {
       <StatCard
         icon={
           <Image
-            src="/fats.png"
-            alt="Fat"
+            src="/fatt.png"
+            alt="fat"
+            width={28}
+            height={28}
+            className="object-contain"
+          />
+        }
+        value="10g"
+        label="Fat"
+        valueColor="text-white"
+        labelColor="text-white/60"
+        layout="vertical"
+        className="bg-transparent w-24"
+      />
+      <StatCard
+        icon={
+          <Image
+            src="/water.png"
+            alt="water"
             width={28}
             height={28}
             className="object-contain"
           />
         }
         value="5g"
-        label="Fat"
-        valueColor="text-[#FF3C3C]"
+        label="Water"
+        valueColor="text-white"
         labelColor="text-white/60"
         layout="vertical"
         className="bg-transparent w-24"
@@ -62,4 +79,4 @@ const Diet: React.FC = () => {
   );
 };
 
-export default Diet;
+export default Essentials;
