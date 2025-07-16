@@ -6,12 +6,13 @@ export default function Footer() {
   return (
     <div className="mt-24 px-8 pt-12 mx-auto flex flex-col gap-4 bg-[#131b24] rounded-tl-3xl rounded-tr-3xl">
       {/* Top Links & Icons */}
-      <AnimatedSection
-        delay={100}
-        duration="duration-500"
-        distance="translate-y-6"
-      >
-        <div className="self-stretch inline-flex justify-between items-center">
+      <div className="w-full flex justify-between items-center">
+        {/* Left: Navigation Links */}
+        <AnimatedSection
+          delay={100}
+          duration="duration-500"
+          distance="translate-y-6"
+        >
           <div className="p-2.5 flex justify-center items-center gap-14">
             <a
               href="#"
@@ -38,7 +39,15 @@ export default function Footer() {
               Contact
             </a>
           </div>
-          <div className="flex justify-start items-center gap-4">
+        </AnimatedSection>
+
+        {/* Right: Social Icons */}
+        <AnimatedSection
+          delay={150}
+          duration="duration-500"
+          distance="translate-y-6"
+        >
+          <div className="flex justify-end items-center gap-4 ml-auto">
             <Image
               src="/linkedIn.png"
               alt="linkedIn"
@@ -54,8 +63,8 @@ export default function Footer() {
               className="cursor-pointer"
             />
           </div>
-        </div>
-      </AnimatedSection>
+        </AnimatedSection>
+      </div>
 
       {/* Divider */}
       <AnimatedSection
