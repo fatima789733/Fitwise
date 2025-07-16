@@ -37,6 +37,7 @@ export default function GlimpseSection() {
               Train
             </span>
             <span className="text-white/70 text-5xl capitalize leading-[57.60px]">
+              {" "}
               Hard,
               <br />
               Move
